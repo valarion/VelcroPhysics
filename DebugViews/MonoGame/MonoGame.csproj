@@ -6,10 +6,6 @@
     <RootNamespace>VelcroPhysics.DebugViews.MonoGame</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
-    <PackageReference Include="MonoGame.Framework.WindowsDX" Version="3.6.0.1625" />
-  </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\VelcroPhysics\VelcroPhysics.MonoGame.csproj" />
   </ItemGroup>
@@ -20,4 +16,7 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.Portable" Version="3.7.0.1708" />
+  </ItemGroup>
 </Project>
