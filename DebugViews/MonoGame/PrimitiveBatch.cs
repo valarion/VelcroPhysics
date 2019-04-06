@@ -106,7 +106,7 @@ namespace VelcroPhysics.DebugViews.MonoGame
                 if (_triangleVertsCount >= _triangleVertices.Length)
                     FlushTriangles();
 
-                _triangleVertices[_triangleVertsCount].Position = new Vector3(vertex, -0.1f);
+                _triangleVertices[_triangleVertsCount].Position = new Vector3(vertex, 0.9f);
                 _triangleVertices[_triangleVertsCount].Color = color;
                 _triangleVertsCount++;
             }
@@ -116,7 +116,7 @@ namespace VelcroPhysics.DebugViews.MonoGame
                 if (_lineVertsCount >= _lineVertices.Length)
                     FlushLines();
 
-                _lineVertices[_lineVertsCount].Position = new Vector3(vertex, 0f);
+                _lineVertices[_lineVertsCount].Position = new Vector3(vertex, 1f);
                 _lineVertices[_lineVertsCount].Color = color;
                 _lineVertsCount++;
             }
